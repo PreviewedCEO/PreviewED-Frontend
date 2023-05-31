@@ -1,11 +1,15 @@
-import { LandingPage } from "./pages/LandingPage";
-import "./App.css";
+import Container from "./components/Container";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <LandingPage />
-      <h1 className="bg-black font-mono text-cyan-300">Hello World</h1>
+      <Header />
+      <Container>
+        <div> Hello </div>
+      </Container>
+      <Footer />
       <div className="bg-teal-500 w-[5rem] h-[5rem] rounded-md"></div>
     </>
   );
