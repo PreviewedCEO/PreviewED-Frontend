@@ -1,16 +1,9 @@
-import Container from "./components/Container";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import LandingIndex from "./pages/Landing-Page/LandingIndex";
 
 function App() {
   return (
     <>
-      <Header />
-      <Container>
-        <div> Hello </div>
-      </Container>
-      <Footer />
-      <div className="bg-teal-500 w-[5rem] h-[5rem] rounded-md"></div>
+      <LandingIndex />
     </>
   );
 }
