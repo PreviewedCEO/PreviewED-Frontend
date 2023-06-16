@@ -1,5 +1,8 @@
 import React from "react";
-import JobCard from "./JobCard"; // Import your JobCard component
+
+import JobCard from "../../components/JobCard";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const SearchJobs = () => {
   // Sample job data (replace with your own data)
@@ -18,13 +21,16 @@ const SearchJobs = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center">
-      {jobs.map((job) => (
-        <JobCard key={job.id} job={job} />
-      ))}
-    </div>
+    <>
+      <Header />
+      <div className="flex flex-wrap justify-center">
+        {jobs.map((job) => (
+          <JobCard key={job.id} job={job} />
+        ))}
+      </div>
+      <Footer />
+    </>
   );
 };
 
 export default SearchJobs;
-

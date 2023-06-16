@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const JobListing = ({ job }) => {
+const JobCard = ({ job }) => {
   return (
     <div className="border border-gray-200 p-4 rounded mb-4">
       <h3 className="text-xl font-bold">{job.title}</h3>
@@ -15,9 +15,11 @@ const JobListing = ({ job }) => {
           className="rounded"
         />
       </div>
-      <a href={`/job/${job.id}`} className="text-blue-600">View Details</a>
+      <a href={`/job/${job.id}`} className="text-blue-600">
+        View Details
+      </a>
     </div>
   );
 };
 
-export default JobListing;
+export default JobCard;

@@ -1,6 +1,7 @@
 import React from "react";
 import { HiOutlineChatAlt2, HiOutlineBell } from "react-icons/hi";
 import { BsFillCaretDownFill } from "react-icons/bs";
+import { Outlet, Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,19 +12,29 @@ const Header = () => {
             <a className="text-2xl font-bold">PreviewED</a>
           </div>
           <li>
-            <a className="hover:text-[#fee058]">Home</a>
+            <Link className="hover:text-[#fee058]" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <a className="hover:text-[#fee058]">All Jobs</a>
+            <Link className="hover:text-[#fee058]" to="/all-jobs">
+              All Jobs
+            </Link>
           </li>
           <li>
-            <a className="hover:text-[#fee058]">Companies</a>
+            <Link className="hover:text-[#fee058]" to="/companies">
+              Companies{" "}
+            </Link>
           </li>
           <li>
-            <a className="hover:text-[#fee058]">People</a>
+            <Link className="hover:text-[#fee058]" to="/people">
+              People
+            </Link>
           </li>
           <li>
-            <a className="hover:text-[#fee058]">Career Advice Videos</a>
+            <Link className="hover:text-[#fee058]" to="/career-advice">
+              Career Advice
+            </Link>
           </li>
         </ul>
       </div>
